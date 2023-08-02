@@ -27,7 +27,11 @@ Topics which are frequently discussed in this space,
 - Automation & DevOps
 - CAP
 
-[Resources](https://www.notion.so/993ba4da304344b38a2fed72c41df4db?pvs=21)
+## Books
+
+- Building Data Intensive Applications, Martin Kleppman
+- [Building Microservices, Sam Newman](https://samnewman.io/books/building_microservices_2nd_edition/)
+
 
 ### Interesting Problems
 
@@ -44,12 +48,12 @@ If you’re into papers, PapersWeLove have a great [list](https://github.com/pap
 
 Dineshkumar \
 Founder @ Scalescape, Inc \
-Built high scale systems @ Gojek, Elasticsearch. \
-Co-organized [Golang-Bangalore](https://www.meetup.com/golang-bangalore) and [Distributed-Systems Bangalore](https://www.meetup.com/distributed-systems-bengaluru/) meetup. Have shared my experience actively in conferences & meetups. Checkout my past [talks](https://devdinu.github.io/talks.html) and [recordings](https://www.youtube.com/@relyonmetrics/videos) where i’ve mostly talked about distributed systems, kafka and Go.
-
+Built high scale systems at Gojek, Elasticsearch. \
+Co-organized [Golang-Bangalore](https://www.meetup.com/golang-bangalore) and [Distributed-Systems Bangalore](https://www.meetup.com/distributed-systems-bengaluru/) meetup. Have shared my experience actively in conferences & meetups. Checkout my past [talks](https://devdinu.github.io/talks.html) and [recordings](https://www.youtube.com/@relyonmetrics/videos) where i’ve discussed distributed systems, kafka and Go. \
 [LinkedIn](https://www.linkedin.com/in/dinesh-kumar) | [Twitter](https://twitter.com/devdineshkumar)
 
-- We’re open to volunteers and moderators who wants to drive the community forward.
+## Call for Volunteers, Speakers, and Hosts
+- We’re looking for volunteers and moderators who wants to be part of the community.
 - If you’ve worked in production systems with experience in this space, let us know, so we could schedule a sessions where you can share more on your expertise.
 - If you’ve a space to host or willing to sponsor future events please reach out to us
 
@@ -65,12 +69,40 @@ Co-organized [Golang-Bangalore](https://www.meetup.com/golang-bangalore) and [Di
 
 ## 01 Live Meet 06-Apr-2023
 
-We discussed around few topics which are listed in details in the following page
+We discussed around distributed-systems, horizontal scaling, migration to GO, downtime and production readiness.
 
-[Dinesh Kumar on LinkedIn: #leancoffee #go #distributedsystems #meetup #go #reliability](https://www.linkedin.com/feed/update/urn:li:activity:7050327145415405568/?updateEntityUrn=urn:li:fs_feedUpdate:(V2,urn:li:activity:7050327145415405568))
+<details>
+<summary><b>Meeting Notes</b></summary>
 
-[Untitled Database](https://www.notion.so/3bf48d263b294702bcc8d2349e2f22a2?pvs=21)
+### Distributed systems at high scale without k8s (pain points)
 
-[Resources](https://www.notion.so/4b83a13817e545d09224482b47661aca?pvs=21)
+- k8s was able to scale easily for the need
+- using EKS was frustrating
+- warm up instances, and use containers
+- pain points of k8s at high scale
+- without k8s scaling based on usage was tricky
 
-[Event Notes](https://www.notion.so/af8997c927124ff9bd038fccc7d9f9cd?pvs=21)
+### Horizontal scaling vs vertical scaling
+- vertical scaling for storage
+- horizontal scale for applications (CPU/Memory)
+- something which allows us to scale down
+- business case  - indexing
+
+### Migration to go and personal experience
+- Proxy - picked go where we neded an alternate and it worked out well so far
+- Helped us reduce infrastructure cost, deployment time and increased performance
+
+### Downtime experience - Complex distributed systems
+
+### Production readiness
+exponential backoff, timeouts
+Auto scaling based on requests
+
+### Tools / Key terms
+envoy, k8s, production-readiness
+
+</details>
+
+[Linkedin post: #leancoffee #go #distributedsystems #meetup #go #reliability](https://www.linkedin.com/feed/update/urn:li:activity:7050327145415405568/?updateEntityUrn=urn:li:fs_feedUpdate:(V2,urn:li:activity:7050327145415405568))
+
+<img src="https://media.licdn.com/dms/image/D5622AQGsOsOrYXN_IA/feedshare-shrink_1280/0/1680928978733?e=1694044800&v=beta&t=oyDOEgvmjQ7QKz9XSSCkyJmDBhutpDHto2NFHjkUUNA" width=50%>
